@@ -9,6 +9,6 @@ object test extends App {
     new Node(5, Some(2)),
     new Node(6, Some(5))
   )
-  def printNodes(nodes: Array[Node]) = {}
-  printNodes(nodes)
+  def getNodes(nodes: Array[Node]) = nodes.map(node => node.id)
+  getNodes(nodes).foreach(println(_))
 }
