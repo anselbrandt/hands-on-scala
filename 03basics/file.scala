@@ -22,7 +22,8 @@ object file extends App {
   }
 
   withFileWriter("File.txt") { writer =>
-    writer.write("Hello\n"); writer.write("World!")
+    writer.write("Hello World!\n")
+    writer.write("From Scala!")
   }
 
   val result = withFileReader("File.txt") { reader =>
